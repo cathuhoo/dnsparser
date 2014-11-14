@@ -4,11 +4,11 @@ CFLAGS=-c -Wall -g -O0 -DDEBUG
 
 CC=gcc
 LDFLAGS=-lresolv -lpthread -lm -lpcap
-SOURCES= dns-parser.c inX_addr.c list.c trie.c  mystring.c
+SOURCES= main.c inX_addr.c list.c trie.c  mystring.c
 
 
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=parser
+EXECUTABLE=dnsparser
 
 prefix=/usr/local/$(EXECUTABLE)
 
